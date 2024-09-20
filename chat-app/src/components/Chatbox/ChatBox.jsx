@@ -132,6 +132,12 @@ const ChatBox = () => {
           ) : null}
         </p>
         <img src={assets.help_icon} alt="" className="help" />
+        <img
+          onClick={() => setChatVisual(false)}
+          src={assets.arrow_icon}
+          className="arrow"
+          alt=""
+        />
       </div>
       <div className="chat-msg">
         {messages.map((msg, index) => (
